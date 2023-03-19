@@ -43,10 +43,11 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
-  ListView _buildList() {
+  ListView _buildList() {0
     return ListView.builder(
       itemCount: _polls!.length,
       itemBuilder: (BuildContext context, int index) {
+        var Poll = _polls![index];
         // todo: Create your poll item by replacing this Container()
         return Container();
       },
